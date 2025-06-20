@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Install dependencies
         run: |
-          apt update && apt install wget zip unzip -y
+          apt update && apt install wget zip unzip python3 -y
         shell: bash
       - uses: actions/checkout@v2
       - name: Clone Repository and Run Scripts
